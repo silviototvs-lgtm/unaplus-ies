@@ -137,7 +137,7 @@ const SUPABASE_ANON = "sb_publishable_dbWUsryHZsM3cH3FAX9e7Q_0fJ_W2Yr";
                 <div class="field"><label>Data</label><input type="date" name="data_reuniao" id="fdata" required></div>
               </div>
               <div class="field">
-                <label>IES</label>
+                <label>IES — Unidade</label>
                 <div class="pill-group">
                   <label class="pill-opt"><input type="radio" name="ies" value="Rio de Janeiro" required><span class="pill">Rio de Janeiro</span></label>
                   <label class="pill-opt"><input type="radio" name="ies" value="Manaus"><span class="pill">Manaus</span></label>
@@ -146,7 +146,7 @@ const SUPABASE_ANON = "sb_publishable_dbWUsryHZsM3cH3FAX9e7Q_0fJ_W2Yr";
                 </div>
               </div>
               <div class="field">
-                <label>Módulo</label>
+                <label>Módulo — Frente de Atuação</label>
                 <div class="pill-group">
                   <label class="pill-opt"><input type="radio" name="modulo" value="Financeiros" required><span class="pill">Financeiros</span></label>
                   <label class="pill-opt"><input type="radio" name="modulo" value="Fiscal e Patrimônio"><span class="pill">Fiscal e Patrimônio</span></label>
@@ -198,16 +198,13 @@ const SUPABASE_ANON = "sb_publishable_dbWUsryHZsM3cH3FAX9e7Q_0fJ_W2Yr";
                 </div>
               </div>
               <div class="field"><label>Observações (opcional)</label><textarea name="observacoes" style="min-height:72px" placeholder="Contexto extra, dependências, arquivos relacionados..."></textarea></div>
+              <button type="submit" class="btn" id="btn-submit">Registrar Demanda</button>
+              <p class="note">Cada envio registra <b>uma demanda</b> no banco. Envie quantas vezes precisar.</p>
+              <div class="counter" id="counter">Enviadas nesta sessão: <b id="cnt">0</b></div>
             </div>
           </div>
 
         </div><!-- /form-grid -->
-
-        <div style="max-width:1100px;margin:0 auto">
-          <button type="submit" class="btn" id="btn-submit">Registrar Demanda</button>
-          <p class="note">Cada envio registra <b>uma demanda</b> no banco. Envie quantas vezes precisar.</p>
-          <div class="counter" id="counter">Enviadas nesta sessão: <b id="cnt">0</b></div>
-        </div>
         <p class="note">Cada envio registra <b>uma demanda</b> no banco. Envie quantas vezes precisar.</p>
         <div class="counter" id="counter">Enviadas nesta sessão: <b id="cnt">0</b></div>
       </form>
